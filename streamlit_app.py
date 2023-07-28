@@ -37,11 +37,12 @@ if image_file is not None:
     if is_generated_by_ai:
         st.header(":robot_face: AI 생성 이미지입니다")
     else:
-        st.header(":artist: AI 생성 이미지가 아닙니다")
+        st.header(":male-artist: AI 생성 이미지가 아닙니다")
 
     st.image(image_file)
     st.divider()
 
 st.header(":page_with_curl: 같이 보기")
+st.markdown("* :memo: [Google Colaboratory](https://colab.research.google.com/drive/1PL2vC3NOWrJgX7ghpu_MAxy9186owuSK?usp=sharing)")
 st.markdown("* :computer: [GitHub 코드 저장소](https://github.com/plming/cifake-classifier-demo)")
 st.markdown("* :chart_with_upwards_trend: [Kaggle/CIFAKE](https://www.kaggle.com/datasets/birdy654/cifake-real-and-ai-generated-synthetic-images)")
