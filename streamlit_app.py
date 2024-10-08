@@ -1,12 +1,11 @@
 import numpy as np
 import streamlit as st
 from PIL import Image
-from tensorflow.keras.models import load_model
-
+import keras
 
 # session state 초기화
 if "model" not in st.session_state:
-    st.session_state.model = load_model('model.h5')
+    st.session_state.model = keras.models.load_model('model.h5')
 
 st.title(":desktop_computer: AI 생성 이미지 분류기")
 st.write("이 앱은 이미지가 인공지능에 의해 생성되었는지 판별하는 서비스입니다.")
